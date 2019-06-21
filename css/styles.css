@@ -41,3 +41,19 @@ body  {
   font-size: 20px;
   color: red;
 }
+
+.form-group {
+  padding-left: 20px;
+}
+
+#blanks {
+  width: 200px
+}
+
+.btn btn-info {
+  padding-left: 20px;
+}
+
+/* .button {
+  padding-left: 20px;
+} */
