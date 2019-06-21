@@ -14,10 +14,30 @@
 @media (min-width: 1200px) { ... }
 
 .jumbotron  {
-  color: info;
+  background-color: orange;
 }
-
 h1  {
   font-size: 50px;
-  background-color: info;
+}
+body  {
+  background-color: lightgreen;
+}
+.info {
+  padding-left: 20px;
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.instructions {
+  padding-left: 20px;
+  color: red;
+
+}
+
+.rules  {
+  padding-left: 20px;
+  font-weight: bolder;
+  font-family: monospace;
+  font-size: 20px;
+  color: red;
 }
