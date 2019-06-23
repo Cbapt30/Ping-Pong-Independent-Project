@@ -13,9 +13,7 @@ var pingpong = function(number) {
     return false;
   }
 
-  for (startingnumber = 0; startingnumber = number; startingnumber +=1)  {
-    alert(startingnumber);
-  }
+
 };
 
 
@@ -29,22 +27,23 @@ $(function()  {
     event.preventDefault();
     var number = parseInt($("#numberinput").val());
     var result = pingpong(number);
-    $("#result").text(result);
-      // for (startingnumber = 0; startingnumber = number; startingnumber +=1)  {
-      //   alert(startingnumber);
-      // }
-      // for
+    for (var startingnumber = 0; startingnumber <= number; startingnumber +=1)  {
+      console.log(startingnumber);
+    }
+    for (var ping = ; ) {
+      console.log("ping");
+    }
+    for (var pong = ;){
+      console.log("pong");
+    }
+
+    for (var pingpong = ;)  {
+      console.log("pingpong");
+    }
+
     });
 
       $("#result").text(result);
     //need to increment by 1 so need to create an array
 
-    // var numberlist = ["number-1",]
-
-
-
-    // $(".")
-
-
   });
-// });
