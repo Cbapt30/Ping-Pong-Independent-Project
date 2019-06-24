@@ -12,10 +12,23 @@ This webpage is designed to take a number from the user and return a count up to
 * Enter a number into the "Enter your number here" field
 * Click the PingPong! button to submit your number
 
+## Specifications
+* It can count up to the provided numbers
+  * Example Input: 5
+  * Example Output: [1,2,3,4,5]
+* It will evaluate the numbers being counted and determine whether they are divisible by 3 and display ping in that numbers position.
+  * Example Input: 6
+  * Example Output: ping
+* It will evaluate the numbers being counted and determine whether they are divisible by 5 and display pong in that numbers position.
+  * Example Input: 10
+  * Example Output: pong
+* It will evaluate the numbers being counted and determine whether they are divisible by 3 and 5 and display pingpong in that numbers position.
+  * Example Input: 30
+  * Example Output: pingpong
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+*I've tried various combinations of code. In the console I can get the loop to count up to the inputted number, but when it comes to running the code to insert ping, pong, and pingpong, the code is not yet running correctly. No output as well. I did get an error output under the submit button at one point. Still working on figuring out the solution.*
 
 ## Support and contact details
 
