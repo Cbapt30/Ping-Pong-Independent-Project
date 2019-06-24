@@ -1,6 +1,7 @@
 // Business Logic
 // handles core functionality and computations of the application
 
+
 var ping = function(number) {
   if ((number % 3 === 0)) {
     return true;
@@ -25,22 +26,27 @@ var pingpong = function(number) {
   }
 };
 
-
 //alert("Please enter a number greater than 0";)
-
+alert("got to middle");
 //User Interface Logic
 // handles interacting with the user, including gathering user input, updating and displaying information on the page
-$(function()  {
-  $("form#ping-pong").submit(function(event)  {
+$(document).ready(function()  {
+  $("form #ping-pong").submit(function(event)  {
     event.preventDefault();
-    var number = parseInt($("input#number").val());
+    var number = parseInt($("#inputnumber").val());
+    //
+alert("got to userinterface start")
+
     // var result = 1;
-
-
-    var result = pingpong(number);
+    // var result = pingpong(number);
+    //want to push these numbers into an array..?
     for (var startingnumber = 0; startingnumber <= number; startingnumber +=1)  {
-    result =  console.log(startingnumber);
+    console.log(startingnumber);
+    event.preventDefault();
     }
+  });
+  alert("got past for loop");
+    // var for = [];
     console.log("hello");
 
     // if (startingnumber % 3 === 0) {
@@ -69,8 +75,8 @@ $(function()  {
 //     if (startingnumber % 3 === 0) {
 //     console.log("ping");
 // }
-      $("#result").show(result);
+      // $("#output").text(result);
+
     //need to increment by 1 so need to create an array
 
     });
-  });
