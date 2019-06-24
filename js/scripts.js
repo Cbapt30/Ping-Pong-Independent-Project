@@ -1,35 +1,45 @@
 // Business Logic
 // handles core functionality and computations of the application
 
-//
-// var pingpong = function(number) {
-//   if ((number % 3 === 0)) {
-//     return true;
-//   } else if ((number % 5 === 0))  {
-//     return true;
-//   } else if ((number % 15 === 0)) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-//
-//
-// };
+var ping = function(number) {
+  if ((number % 3 === 0)) {
+    return true;
+  } else {
+  return false;
+  }
+};
+
+var pong = function(number) {
+ if ((number % 5 === 0))  {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+var pingpong = function(number) {
+  if ((number % 15 === 0)) {
+    return true;
+  } else {
+    return false;
+  }
+};
 
 
 //alert("Please enter a number greater than 0";)
-
 
 //User Interface Logic
 // handles interacting with the user, including gathering user input, updating and displaying information on the page
 $(function()  {
   $("form#ping-pong").submit(function(event)  {
     event.preventDefault();
-    var number = parseInt($("#numberInput").val());
+    var number = parseInt($("input#number").val());
+    // var result = 1;
 
-    // var result = pingpong(number);
+
+    var result = pingpong(number);
     for (var startingnumber = 0; startingnumber <= number; startingnumber +=1)  {
-      console.log(startingnumber);
+    result =  console.log(startingnumber);
     }
     console.log("hello");
 
@@ -43,7 +53,7 @@ $(function()  {
     //   }
     // }
 
-    // for (var ping = startingnumber % 3 === 0; ) {
+    // for (var ping = startingnumber % 3 === 0; startingnumber % 3 !===0; startingnumber +=1) {
     //   console.log("ping");
     // }
     // for (var pong = ;){
@@ -59,7 +69,7 @@ $(function()  {
 //     if (startingnumber % 3 === 0) {
 //     console.log("ping");
 // }
-      $("#result").text(result);
+      $("#result").show(result);
     //need to increment by 1 so need to create an array
 
     });
