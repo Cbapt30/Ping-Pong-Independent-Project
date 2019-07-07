@@ -53,3 +53,7 @@ body  {
 .btn btn-info {
   padding-left: 20px;
 }
+
+#result {
+  display; none;
+}
